@@ -9,6 +9,7 @@
   position: absolute;
   top: 2px;
   left: 5px;
+  margin-top: 2px;
 }
 
 .menu-header {
@@ -26,6 +27,26 @@
   border-radius: 5px;
 }
 
+.menu-content {
+  position: relative;
+  padding: 5px;
+}
+
+.menu-content > .card-price {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+
+.menu-content > .card-guests {
+  position: absolute;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between,
+}
+
 .avatar-large {
   width: 150px;
   margin-left: 10px;
@@ -35,7 +56,20 @@ h3, h2 {
   color: #7B0828;
 }
 
-h2 {
-  font-size: 50px;
+h3, p, .menu-booking, .menu-content {
+    font-family: 'Old Standard TT', serif;
 }
 
+h2 {
+  font-size: 50px;
+  font-family: 'Cabin', sans-serif;
+
+}
+
+.btn {
+  width: 92.5% !important;
+}
+
+.col-xs-9, .col-xs-3 {
+  padding: 0px;
+}

@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xs-9">
       <div class="menu-header">
-        <div class="text-align card menu-picture" style="background-image: linear-gradient(100deg, rgba(236, 233, 230, 0.3) 0%, rgba(255, 255, 255, 0.3) 50%), url('http://lorempixel.com/500/300/food/');">
+        <div class="text-align card menu-picture" style="background-image: linear-gradient(100deg, rgba(236, 233, 230, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%), url('http://lorempixel.com/500/300/food/');">
           <h2><%= @menu.name %></h2>
         </div>
       </div>
@@ -20,22 +20,24 @@
     <div class="col-xs-9">
       <div class="card menu-content">
         <div class="card-description text-justify">
-          Description: <%= @menu.description.to_s %>
+          <%= @menu.description %>
         </div>
-        <div class="card-price">
-          Price: <%= @menu.price %> €
-        </div>
-        <div class="card-guests">
-          Guests: <%= @menu.guests %>
-        </div>
-        <div class="card-category">
-          Category: <%= @menu.category.name %>
+        <div class="flexbox">
+          <div class="card-price">
+            Price: <%= @menu.price %> €
+          </div>
+          <div class="card-guests">
+            Guests: <%= @menu.guests %>
+          </div>
+          <div class="card-category">
+            Category: <%= @menu.category.name %>
+          </div>
         </div>
       </div>
     </div>
     <div class="col-xs-3">
-    <div class="card menu-booking text-center">
-       <%=  link_to "Book #{@menu.user.first_name}'s menu now!", new_menu_booking_path(:menu_id), class: "btn btn-success" %>
+      <div class="card menu-booking text-center">
+      <%=  link_to "Book #{@menu.user.first_name}'s menu now!", new_menu_booking_path(:menu_id), class: "btn btn-success" %>
      </div>
    </div>
  </div>
