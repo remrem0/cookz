@@ -1,6 +1,8 @@
 class Menu < ApplicationRecord
   belongs_to :user
   belongs_to :category
+  mount_uploader :picture, PhotoUploader
+
 
   validates :name, presence: true, allow_blank: false
   validates :description, presence: true, allow_blank: false
