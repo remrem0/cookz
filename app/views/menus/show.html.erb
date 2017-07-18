@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="text-align card">
+        <h1><%= @menu.name %></h1>
+        <img src="http://lorempixel.com/500/300/food/" alt="Menu_photo">
+      </div>
+      <div class="card">
+        Description: <%= @menu.description.to_s %>
+          Price: <%= @menu.price %>
+          Guests: <%= @menu.guests %>
+          Category: <%= @menu.category.name %>
+      </div>
+    </div>
+  </div>
+</div>
