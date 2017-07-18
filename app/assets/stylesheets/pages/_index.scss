@@ -2,6 +2,7 @@
 
 h1 {
   margin-bottom: 15px;
+  color: #7B0828;
 }
 
 .card {
@@ -9,8 +10,6 @@ h1 {
   font-weight: bold;
   text-shadow: 0 2px 3px rgba(0,0,0,0.5);
   background-size: cover !important;
-  // background: url('http://lorempixel.com/500/300/food/');
-  background-color: black;
   color: white;
   position: relative;
   border-radius: 4px;
@@ -26,16 +25,26 @@ h1 {
   top: 10px;
   left: 10px;
   font-size: 16px;
+  background-color:#7B0828;
+  color: white;
+  border-radius: 5px;
+
 }
 .card-price {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  background-color:#7B0828;
+  color: white;
+  border-radius: 5px;
 }
 .card-guests {
   position: absolute;
   bottom: 10px;
   left: 10px;
+  background-color:#7B0828;
+  color: white;
+  border-radius: 5px;
 }
 .card-description h2 {
   font-size: 24px;
