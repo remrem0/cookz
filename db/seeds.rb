@@ -17,19 +17,29 @@ Category.destroy_all
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
-    password: Faker::Internet.password(8)
+    password: Faker::Internet.password(8),
+    avatar: Faker::Avatar.image("my-own-slug", "50x50")
     )
 end
+
+User.create(
+  first_name: "Rémy",
+    last_name: "Lichani",
+    email: "rem.lichani@gmail.com",
+    address: "Rue sisi",
+    password: "bcg0802"
+    )
 
 Category.create([{name:"French"}, {name:"Italian"}, {name:"Japanese"}, {name:"Chinese"}, {name: "Thaï"}, {name: "German"}, {name:"Spanish"}, {name: "Mexican"}])
 
 10.times do
-  Menu.create([{
+  Menu.create(
     name: Faker::Food.dish,
     description: Faker::Lorem.sentences,
     category: Category.all.sample,
     price: Faker::Number.number(2),
     guests: Faker::Number.number(1),
-    user: User.all.sample
-    }])
+    user: User.all.sample,
+    picture: "http://lorempixel.com/500/300/food/"
+    )
 end

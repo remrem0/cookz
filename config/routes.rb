@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'menus/index'
+
+  get 'menus/show'
+
   devise_for :users
   root to: 'pages#home'
   resources :menus, only: [:index, :show] do

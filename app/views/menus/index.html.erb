@@ -1,0 +1,28 @@
+<h1 class="text-center">Menus</h1>
+
+<div class="container">
+  <div class="row">
+    <% @menus.each do |menu| %>
+    <div class="col-xs-12 col-sm-4">
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path(menu.picture) %>')">
+        <div class="card-category">
+          <%= menu.name %>
+        </div>
+        <div class="card-price">
+          <%="Price: #{menu.price} €" %>
+        </div>
+        <div class="card-guests">
+          <%="For #{menu.guests} people" %>
+        </div>
+        <div class="card-user avatar">
+          <%= image_tag(menu.user.avatar)
+ %>
+        </div>
+       <%= link_to "", menus_show_path, class:"card-link"%>
+      </div>
+
+    </div>
+    <% end %>
+  </div>
+</div>
