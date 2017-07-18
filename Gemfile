@@ -19,6 +19,8 @@ gem 'devise'
 gem 'faker'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
+gem 'cloudinary'
+gem 'carrierwave',  '~> 0.11.2'
 
 group :development, :test do
   gem 'better_errors'

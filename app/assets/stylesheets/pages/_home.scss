@@ -7,12 +7,13 @@
   flex: 0 1 400px;
   display: flex;
   justify-content: flex-end;
+  border-radius: 2px;
   padding: none;
   position: relative;
 }
 .navbar-wagon-search-btn {
   line-height: 40px;
-  color: #ACACAC;
+  color: #A0A3A3;
   border: none;
   background: transparent;
   position: absolute;
@@ -44,8 +45,8 @@
   height: 45px !important;
   border: none;
   box-shadow: none;
-  width: 103%;
-  margin-left: -3%;
+  width: 108%;
+  margin-left: -4%;
   font-size: 15px;
 }
 
@@ -53,18 +54,19 @@
   height: 45px !important;
   border: none;
   box-shadow: none;
-  width: 90%;
-  margin-left: -3%;
+  width: 92%;
+  margin-left: -4%;
   font-size: 15px;
 }
 
 .container-grey {
-  background-color: silver;
+  background-color: #F5F5F5;
+  padding: 10%;
 }
 .search-card {
-  background-color: white;
-  padding: 7%;
-  border-radius: 2px;
+  background-color: #FEFFA7;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 
