@@ -4,7 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :menus
-  has_many :bookings
+  has_many :menus, dependent: :destroy
+  has_many :bookings, dependent: :destroy
   has_many :categories, through: :menus
+
+  validates :first_name, presence: true, allow_blank: false
+  validates :last_name, presence: true, allow_blank: false
+  validates :email, presence: true, allow_blank: false
+  validates :address, presence: true, allow_blank: false
 end

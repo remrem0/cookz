@@ -5,3 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Cleaning DB..."
+
+User.destroy_all
+Menu.destroy_all
+Category.destroy_all
+
+10.times do
+  User.create(
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
+    email: Faker::Internet.email,
+    address: Faker::Address.street_address,
+    password: Faker::Internet.password(8)
+    )
+end
+
+Category.create([{name:"French"}, {name:"Italian"}, {name:"Japanese"}, {name:"Chinese"}, {name: "Thaï"}, {name: "German"}, {name:"Spanish"}, {name: "Mexican"}])
+
+10.times do
+  Menu.create([{
+    name: Faker::Food.dish,
+    description: Faker::Lorem.sentences,
+    category: Category.all.sample,
+    price: Faker::Number.number(2),
+    guests: Faker::Number.number(1),
+    user: User.all.sample
+    }])
+end
