@@ -7,16 +7,16 @@
   flex: 0 1 400px;
   display: flex;
   justify-content: flex-end;
-  padding: 0 10px;
+  padding: none;
   position: relative;
 }
 .navbar-wagon-search-btn {
   line-height: 40px;
-  color: #BFBFBF;
+  color: #ACACAC;
   border: none;
   background: transparent;
   position: absolute;
-  right: 1.4%;
+  right: 1%;
   top: 1px;
   z-index: 1;
 }
@@ -29,7 +29,7 @@
   border: 1px solid #E6E6E6;
   border-radius: 5px;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 15px;
   outline: none;
   select {
     padding: none;
@@ -46,14 +46,25 @@
   box-shadow: none;
   width: 103%;
   margin-left: -3%;
+  font-size: 15px;
 }
 
 #guests_number {
   height: 45px !important;
   border: none;
   box-shadow: none;
-  width: 92%;
+  width: 90%;
   margin-left: -3%;
+  font-size: 15px;
+}
+
+.container-grey {
+  background-color: silver;
+}
+.search-card {
+  background-color: white;
+  padding: 7%;
+  border-radius: 2px;
 }
 
 
