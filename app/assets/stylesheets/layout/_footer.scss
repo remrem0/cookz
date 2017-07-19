@@ -2,28 +2,30 @@
 //--- Footer
 
 #footer {
-  background: #FEFFFE;
-  margin-bottom: -10px;
+  background: #770A28;
+  margin-bottom: 0px;
   padding: 20px 0 10px 5px;
+  margin-top: 10px;
 }
 
 #footer ul a {
-  color: #770A28;
+  color: #F4F5F4;
   font-size: 30px;
 
 }
 
 #footer ul a:hover {
-  color: #FFFABC;
+  color: #F0175B;
 }
 
 
 #footer p {
-  color: #770A28;
+  color: #F4F5F4;
+  margin-top: 13px;
 }
 
 .flexbox {
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 10px 15px;
 }
