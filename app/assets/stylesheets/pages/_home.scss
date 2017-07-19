@@ -62,7 +62,10 @@
 
 .container-grey {
   background-color: #F5F5F5;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 .search-card {
   background-color: #FEFFA7;
@@ -72,6 +75,10 @@
 
 .form-control {
   height: 46px !important;
+}
+
+#text-welcome {
+  margin-bottom: 5%;
 }
 
 
