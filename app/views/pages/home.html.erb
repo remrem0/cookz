@@ -37,12 +37,12 @@
 </div>
 
 
-
-
-<h2 class="text-center">Owa best mothafuckin C(r)ookz</h2>
+<div id="text-header">
+  <h2 class="text-center">Our crem dela MOTHAFUCKING CREM C(r)ookz</h2>
+</div>
 
 <div class="container">
-  <div class="row">
+<div class="row" id="row-yellow">
     <% @menus.each do |menu| %>
     <div class="col-xs-12 col-sm-6">
 
@@ -59,15 +59,13 @@
         <div class="card-user">
           <%= cl_image_tag(menu.user.avatar, class: "avatar-large")%>
         </div>
-       <%= link_to "", menu_path(:menu_id), class:"card-link"%>
+        <%= link_to "", menu_path(:menu_id), class:"card-link"%>
       </div>
 
     </div>
     <% end %>
   </div>
 </div>
-
-
 
 
 <% content_for :after_js do %>
