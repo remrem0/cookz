@@ -17,10 +17,13 @@
           <%= image_tag("guests.png") %>
         </div>
         <div class="card-user">
-          <%= cl_image_tag(menu.user.avatar, class: "avatar-large")
- %>
+          <%= cl_image_tag(menu.user.avatar, class: "avatar-large")%>
         </div>
+<<<<<<< HEAD
        <%= link_to "", menu_path(menu.id), class:"card-link"%>
+=======
+       <%= link_to "", menu_path(:menu_id), class:"card-link"%>
+>>>>>>> master
       </div>
 
     </div>
