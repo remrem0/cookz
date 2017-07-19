@@ -3,6 +3,7 @@
   before_action :set_menu, only: [:show]
 
   def index
+
     @menus = Menu.all
   end
 
