@@ -1,13 +1,20 @@
 .card {
   height: 175px;
+<<<<<<< HEAD
   font-weight: lighter;
+=======
+  font-weight: bold;
+>>>>>>> master
   text-shadow: 0 2px 3px rgba(0,0,0,0.5);
   background-size: cover !important;
   color: white;
   position: relative;
   border-radius: 4px;
   margin-bottom: 20px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 }
 .card-user {
   position: absolute;
@@ -16,10 +23,17 @@
 }
 .card-category {
   position: absolute;
+<<<<<<< HEAD
   top: 20px;
   left: 10px;
   font-size: 20px;
   background-color:rgba(123,8,40, 0.6);
+=======
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  background-color:#7B0828;
+>>>>>>> master
   color: white;
   border-radius: 5px;
 
@@ -28,19 +42,31 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
+<<<<<<< HEAD
   background-color:rgba(123,8,40, 0.6);
   color: white;
   border-radius: 5px;
   font-size: 20px;
 
+=======
+  background-color:#7B0828;
+  color: white;
+  border-radius: 5px;
+>>>>>>> master
 }
 .card-guests {
   position: absolute;
   bottom: 10px;
   left: 10px;
+<<<<<<< HEAD
   color: white;
   border-radius: 5px;
   font-size: 20px;
+=======
+  background-color:#7B0828;
+  color: white;
+  border-radius: 5px;
+>>>>>>> master
 }
 .card-description h2 {
   font-size: 24px;
