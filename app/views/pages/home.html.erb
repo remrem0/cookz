@@ -1,8 +1,8 @@
 <div class="container-grey">
-<div class="text-center" id="text-welcome">
-  <h1>Welcome to the Homepage of WeedCookerzzz</h1>
-  <h3>Only the big boyz 'llowed to taste this GANJA 18++ or them popo gon kill ya righ' away</h3>
-</div>
+  <div class="text-center" id="text-welcome">
+    <h1>Welcome to Cookers' homepage</h1>
+    <h3>Have the best cooks in town prepare your meal</h3>
+  </div>
   <div class="search-card">
     <form action="/menus" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input form-control" placeholder="Where do you live?">
@@ -17,7 +17,6 @@
           <% end %>
         </select>
       </div>
-
       <div class="navbar-wagon-search-input">
         <select name="" id="guests_number" class="form-control select required">
           <option value="" disabled selected>How many people?</option>
@@ -26,7 +25,6 @@
           <% end %>
         </select>
       </div>
-
       <div>
         <button type="submit" class="navbar-wagon-search-btn">
           <i class="fa fa-search"></i>
@@ -37,12 +35,14 @@
 </div>
 
 
+
+
 <div id="text-header">
-  <h2 class="text-center">Our crem dela MOTHAFUCKING CREM C(r)ookz</h2>
+  <h2 class="text-center">Our best-rated Cooks</h2>
 </div>
 
-<div class="container">
-<div class="row" id="row-yellow">
+<div class="wrapper-white">
+  <div class="row">
     <% @menus.each do |menu| %>
     <div class="col-xs-12 col-sm-6">
 
@@ -69,11 +69,11 @@
 
 
 <% content_for :after_js do %>
-  <script type="text/javascript">
-    $(function () {
-      $('#datetimepicker1').datetimepicker({
-        format: 'DD/MM/YYYY'
-      });
+<script type="text/javascript">
+  $(function () {
+    $('#datetimepicker1').datetimepicker({
+      format: 'DD/MM/YYYY'
     });
-  </script>
+  });
+</script>
 <% end %>
