@@ -44,14 +44,14 @@
     <% @menus.each do |menu| %>
     <div class="col-xs-12 col-sm-6">
 
-      <div class="card" style="background: linear-gradient(100deg, rgba(236, 233, 230, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%),  url('<%= cl_image_path(menu.picture) %>')">
+      <div class="card" style="background: linear-gradient(100deg, rgba(0, 0, 0, 0.2)0%, rgba(123, 8, 40, 0.3)50%),  url('<%= cl_image_path(menu.picture) %>')">
         <div class="card-category">
           <%= menu.name %>
         </div>
         <div class="card-price">
           <%="#{menu.price} €" %>
         </div>
-        <div class="card-guests">
+        <div class="card-guests align-items">
           <%="#{menu.guests}"%>
           <%= image_tag("guests.png") %>
         </div>
