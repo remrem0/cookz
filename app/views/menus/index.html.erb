@@ -10,16 +10,17 @@
           <%= menu.name %>
         </div>
         <div class="card-price">
-          <%="Price: #{menu.price} €" %>
+          <%="#{menu.price} €" %>
         </div>
         <div class="card-guests">
-          <%="For #{menu.guests} people" %>
+          <%="#{menu.guests}"%>
+          <%= image_tag("guests.png") %>
         </div>
         <div class="card-user">
           <%= cl_image_tag(menu.user.avatar, class: "avatar-large")
  %>
         </div>
-       <%= link_to "", menus_show_path, class:"card-link"%>
+       <%= link_to "", menu_path(:menu_id), class:"card-link"%>
       </div>
 
     </div>

@@ -17,7 +17,7 @@ user1 = User.create!(
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "http://www.mtspartners.com/wp-content/uploads/sites/2/2015/03/dilmore-3977-large.png"
+    remote_avatar_url: "https://www.incimages.com/uploaded_files/image/100x100/Jason-Fried-Founder-37Signals-bkt_5667.jpg"
     )
 
 user2 = User.create!(
@@ -26,7 +26,7 @@ user2 = User.create!(
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "http://weknowyourdreams.com/images/woman/woman-02.jpg"
+    remote_avatar_url: "https://i1.rgstatic.net/ii/profile.image/AS%3A317763527086084%401452772136719_m/Naira_Topooco.png"
     )
 
 user3 = User.create!(
