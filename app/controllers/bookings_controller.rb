@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   def new
-    @booking = Booking.new
+    @booking = Booking.new(menu_id: params[:menu_id])
   end
 
   def create
