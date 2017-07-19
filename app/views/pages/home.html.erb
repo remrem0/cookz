@@ -1,9 +1,9 @@
 <div class="container-grey">
   <div class="search-card">
     <form action="/menus" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Where do you live?">
+      <input type="text" class="navbar-wagon-search-input form-control" placeholder="Where do you live?">
 
-      <input type='text' class="date navbar-wagon-search-input" id='datetimepicker1' placeholder="When will you eat?" />
+      <input type='text' class="date navbar-wagon-search-input form-control" id='datetimepicker1' placeholder="When will you eat?" />
 
       <div class="required menu_category navbar-wagon-search-input">
         <select name="menu[:category_id]" id="menu_category_id" class="form-control  select required">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="navbar-wagon-search-input">
-        <select name="" id="guests_number" class="form-control  select required">
+        <select name="" id="guests_number" class="form-control select required">
           <option value="" disabled selected>How many people?</option>
           <% @numbers.each do |number| %>
           <option value=""><%= number  %></option>
