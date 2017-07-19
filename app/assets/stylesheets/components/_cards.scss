@@ -1,7 +1,7 @@
 .card {
   height: 175px;
   font-weight: lighter;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 0 3px 4px rgba(0,0,0,0.6);
   background-size: cover !important;
   color: white;
   position: relative;
@@ -16,32 +16,27 @@
 }
 .card-category {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 15px;
-  font-size: 20px;
-  background-color:rgba(123,8,40, 0.6);
+  font-size: 25px;
+  // background-color:rgba(123,8,40, 0.6);
   color: white;
-  border-radius: 5px;
-
 }
 .card-price {
   position: absolute;
   bottom: 10px;
   right: 15px;
-  background-color:rgba(123,8,40, 0.6);
-  border-radius: 5px;
-  font-size: 20px;
+  // background-color:rgba(123,8,40, 0.6);
+  font-size: 25px;
   color: white;
-  border-radius: 5px;
 }
 .card-guests {
   position: absolute;
   bottom: 10px;
   left: 15px;
   color: white;
-  border-radius: 5px;
-  font-size: 20px;
-  background-color:rgba(123,8,40, 0.6);
+  font-size: 25px;
+  // background-color:rgba(123,8,40, 0.6);
 }
 .card-description h2 {
   font-size: 24px;

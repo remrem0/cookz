@@ -139,7 +139,7 @@ menu4 = Menu.create!(
     )
 
 menu5 = Menu.create!(
-    name: "Filet de bar rôti, pommes boulangères",
+    name: "Filet de bar rôti",
     city: "Nantes",
     description: "Emulsion",
     category: Category.first,
