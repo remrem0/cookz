@@ -3,8 +3,12 @@
   before_action :set_menu, only: [:show]
 
   def index
-
     @menus = Menu.all
+    if params
+      if params[:booking][:location]
+        @menus = @menus.where(city: params[:booking][:location])
+      end
+    end
   end
 
   def show
