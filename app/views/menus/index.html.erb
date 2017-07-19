@@ -1,4 +1,4 @@
-<h1 class="text-center">Menus</h1>
+<h1 class="text-center" id="h1index">Menus</h1>
 
 <div class="container">
   <div class="row">
@@ -20,7 +20,7 @@
           <%= cl_image_tag(menu.user.avatar, class: "avatar-large")
  %>
         </div>
-       <%= link_to "", menu_path(:menu_id), class:"card-link"%>
+       <%= link_to "", menus_path(:menu_id), class:"card-link"%>
       </div>
 
     </div>
