@@ -32,13 +32,13 @@
   padding: 5px;
 }
 
-.menu-content > .card-price {
+.menu-content > .menu-price {
   position: absolute;
   bottom: 2px;
   right: 5px;
 }
 
-.menu-content > .card-guests {
+.menu-content > .menu-guests {
   position: absolute;
 }
 
@@ -47,29 +47,23 @@
   justify-content: space-between,
 }
 
-.avatar-large {
+.avatar-super-large {
   width: 150px;
   margin-left: 10px;
   margin-top: 10px;
 }
-h3, h2 {
-  color: #7B0828;
-}
 
-h3, p, .menu-booking, .menu-content {
+.menu-profile, .menu-booking, .menu-content {
     font-family: 'Old Standard TT', serif;
 }
 
-h2 {
+.menu-picture > h2 {
   font-size: 50px;
   font-family: 'Cabin', sans-serif;
 
 }
 
-.btn {
+.btn-booking {
   width: 92.5% !important;
 }
 
-.col-xs-9, .col-xs-3 {
-  padding: 0px;
-}
