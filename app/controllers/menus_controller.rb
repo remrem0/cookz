@@ -1,4 +1,4 @@
-class MenusController < ApplicationController
+  class MenusController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_menu, only: [:show]
 
