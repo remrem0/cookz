@@ -2,3 +2,76 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+ /* Navbar search form */
+.navbar-wagon-search {
+  flex: 0 1 400px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 2px;
+  padding: none;
+  position: relative;
+}
+.navbar-wagon-search-btn {
+  line-height: 40px;
+  color: #A0A3A3;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 1%;
+  top: 1px;
+  z-index: 1;
+}
+.navbar-wagon-search-input {
+  flex: 0 1 300px;
+  transition: all 0.15s ease;
+  line-height: 40px;
+  font-weight: lighter;
+  color: #666666;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 15px;
+  outline: none;
+  background-color: white;
+  select {
+    padding: none;
+  }
+}
+
+.navbar-wagon-search-input:focus  {
+  border: 1px solid #CCCCCC;
+}
+
+#menu_category_id {
+  height: 45px !important;
+  border: none;
+  box-shadow: none;
+  width: 108%;
+  margin-left: -4%;
+  font-size: 15px;
+}
+
+#guests_number {
+  height: 45px !important;
+  border: none;
+  box-shadow: none;
+  width: 92%;
+  margin-left: -4%;
+  font-size: 15px;
+}
+
+.container-grey {
+  background-color: #F5F5F5;
+  padding: 10%;
+}
+.search-card {
+  background-color: #FEFFA7;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.form-control {
+  height: 46px !important;
+}
+
+
