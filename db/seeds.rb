@@ -82,6 +82,14 @@ rem = User.create(
     password: "bcg0802"
     )
 
+con = User.create(
+  first_name: "Consti",
+    last_name: "11",
+    email: "constantin.pahl@gmail.com",
+    address: "Rue soso",
+    password: "Lewagon2017"
+    )
+
 puts "Creating categories..."
 Category.create([{name:"French"}, {name:"Italian"}, {name:"Japanese"}, {name:"Chinese"}, {name: "Thaï"}, {name: "German"}, {name:"Spanish"}, {name: "Mexican"}])
 

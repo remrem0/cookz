@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="booking-content">
+    <div class="row">
+      <div class="col-xs-7">
+        <h1>Book this menu!</h1>
+        <%= render 'form', booking: @booking %>
+      </div>
+      <div class="col-xs-5">
+        <div class="booking-picture">
+          <div class="booking-recap" style="background-image: linear-gradient(100deg, rgba(236, 233, 230, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%), url( <%= @booking.menu.picture %>);">
+          </div>
+          <div class="booking-info">
+            <h2 class="text-center"> <%= @booking.menu.name %> </h2>
+            <p>Price: <%= @booking.menu.price %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
