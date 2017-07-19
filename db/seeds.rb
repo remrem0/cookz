@@ -11,61 +11,61 @@ Menu.destroy_all
 Category.destroy_all
 
 puts "Creating users..."
-user1 = User.create!(
+user1 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "https://image.flaticon.com/icons/svg/149/149073.svg"
+    remote_avatar_url: "https://www.incimages.com/uploaded_files/image/100x100/Jason-Fried-Founder-37Signals-bkt_5667.jpg"
     )
 
-user2 = User.create!(
+user2 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "http://weknowyourdreams.com/images/woman/woman-02.jpg"
+    remote_avatar_url: "https://i1.rgstatic.net/ii/profile.image/AS%3A317763527086084%401452772136719_m/Naira_Topooco.png"
     )
 
-user3 = User.create!(
+user3 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "http://media.safebee.com/assets/images/2015/4/chef%20tips.jpg.838x0_q67_crop-smart.jpg"
+    remote_avatar_url: "https://www.incimages.com/uploaded_files/image/100x100/Kevin_58365.jpg"
     )
 
-user4 = User.create!(
+user4 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "https://s-media-cache-ak0.pinimg.com/originals/c1/70/18/c17018aef924c822fe072d97a03492a0.jpg"
+    remote_avatar_url: "https://usercontent1.hubstatic.com/7064006_100.jpg"
     )
 
-user5 = User.create!(
+user5 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "http://saschoolofcookery.co.za/blog/wp-content/uploads/2013/06/a47bdb2ae5a99dc68185bc94a1d4224c_XL.jpg"
+    remote_avatar_url: "https://i.forbesimg.com/under30video/images/menu-thumbs/face-2-face-thumb.png"
     )
 
-user6 = User.create!(
+user6 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "https://pbs.twimg.com/profile_images/3184873686/c7ed20aa023ccd8e11ffbc64a274fba0_400x400.jpeg"
+    remote_avatar_url: "https://media.npr.org/about/people/bios/biophotos/jmccarthy.150_sq-e3462dac4f58e91ffec445013ca0909a769f1fab-s100-c85.jpg"
     )
 
-user7 = User.create!(
+user7 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
@@ -74,12 +74,20 @@ user7 = User.create!(
     remote_avatar_url: "https://dahlrestaurantgroup.com/wp-content/uploads/2017/03/Chef-Lisa-Dahl1-852x852.jpg"
     )
 
-rem = User.create!(
+rem = User.create(
   first_name: "Rémy",
     last_name: "Lichani",
     email: "rem.lichani@gmail.com",
     address: "Rue sisi",
     password: "bcg0802"
+    )
+
+con = User.create(
+  first_name: "Consti",
+    last_name: "11",
+    email: "constantin.pahl@gmail.com",
+    address: "Rue soso",
+    password: "Lewagon2017"
     )
 
 puts "Creating categories..."
@@ -96,7 +104,7 @@ menu1 = Menu.create(
     remote_picture_url: "https://static.pexels.com/photos/505330/pexels-photo-505330.jpeg"
     )
 
-menu1 = Menu.create(
+menu2 = Menu.create(
     name: "Côte de boeuf (500g)",
     description: "Viande issue de l'agriculture biologique",
     category: Category.first,
@@ -106,4 +114,43 @@ menu1 = Menu.create(
     remote_picture_url: "https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg"
     )
 
-puts "Finished!"
+menu3 = Menu.create(
+    name: "Pad thaï",
+    description: "Douceur thaïlandaise préparée selon la tradition",
+    category: Category.fifth,
+    price: "16€",
+    guests: 7,
+    user: user3,
+    remote_picture_url: "http://img.taste.com.au/-rXeYPJs/taste/2016/11/chicken-pad-thai-94082-1.jpeg"
+    )
+
+menu4 = Menu.create!(
+    name: "Tapas",
+    description: "hello",
+    category: Category.all[7],
+    price: "25€",
+    guests: 10,
+    user: user4,
+    remote_picture_url: "http://www.eatapas.co.uk/img/cms/EATAPAS%20SUGGESTIONS/Cheese%20Consejos/CHEESE%20TRAY.jpg"
+    )
+
+menu5 = Menu.create!(
+    name: "Filet de bar rôti, pommes boulangères",
+    description: "Emulsion",
+    category: Category.first,
+    price: "23€",
+    guests: 4,
+    user: user5,
+    remote_picture_url: "http://www.bureaudepresseagro.com/wp-content/uploads/2014/09/7493-Filet-de-Bar-iod%C3%A9.jpg"
+    )
+
+menu6 = Menu.create!(
+    name: "Plateau sushis maison",
+    description: "hello",
+    category: Category.third,
+    price: "20€",
+    guests: 9,
+    user: user6,
+    remote_picture_url: "https://static.pexels.com/photos/213939/pexels-photo-213939.jpeg"
+    )
+puts "Finished"

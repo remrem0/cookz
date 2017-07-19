@@ -2,10 +2,10 @@
 <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :description %>
+    <%= f.input :description, label: "Tell us a bit about your diner..." %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Book it while it's hot!", class: "btn btn-success booking-button" %>
   </div>
 <% end %>

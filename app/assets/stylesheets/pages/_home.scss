@@ -62,10 +62,13 @@
 
 .container-grey {
   background-color: #F5F5F5;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 .search-card {
-  background-color: #FEFFA7;
+  background-color: #FFFABC;
   padding: 1%;
   border-radius: 5px;
 }
@@ -74,4 +77,17 @@
   height: 46px !important;
 }
 
+#text-welcome {
+  margin-bottom: 5%;
+}
+
+#text-header {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #FFFABC;
+}
+
+#row-yellow {
+  background-color: #FFFABC;
+}
 

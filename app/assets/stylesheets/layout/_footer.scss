@@ -1,1 +1,29 @@
 // Your footer style
+//--- Footer
+
+#footer {
+  background: #FEFFFE;
+  margin-bottom: -10px;
+  padding: 20px 0 10px 5px;
+}
+
+#footer ul a {
+  color: #770A28;
+  font-size: 30px;
+
+}
+
+#footer ul a:hover {
+  color: #FFFABC;
+}
+
+
+#footer p {
+  color: #770A28;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
