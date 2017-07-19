@@ -18,6 +18,7 @@ user1 = User.create(
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
     remote_avatar_url: "https://www.incimages.com/uploaded_files/image/100x100/Jason-Fried-Founder-37Signals-bkt_5667.jpg"
+    )
 
 user2 = User.create(
     first_name: Faker::Name.first_name,
@@ -27,6 +28,7 @@ user2 = User.create(
     password: Faker::Internet.password(8),
     remote_avatar_url: "https://i1.rgstatic.net/ii/profile.image/AS%3A317763527086084%401452772136719_m/Naira_Topooco.png"
     )
+
 user3 = User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
