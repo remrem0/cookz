@@ -8,6 +8,12 @@
       if params[:booking][:location]
         @menus = @menus.where(city: params[:booking][:location])
       end
+      if params[:menu][:category_id]
+        @menus = @menus.where(category_id: params[:menu][:category_id])
+      end
+      if params[:booking][:guests]
+        @menus = @menus.where(guests: params[:booking][:guests])
+      end
     end
   end
 

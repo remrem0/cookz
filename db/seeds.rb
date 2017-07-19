@@ -91,6 +91,7 @@ menu1 = Menu.create(
     description: "Excellent risotto crémeux et avec une note de citron. Tomate fraîche cuite au four.",
     category: Category.second,
     price: "17€",
+    city: "Paris",
     guests: 5,
     user: user1,
     remote_picture_url: "https://static.pexels.com/photos/505330/pexels-photo-505330.jpeg"
@@ -101,6 +102,7 @@ menu2 = Menu.create(
     description: "Viande issue de l'agriculture biologique",
     category: Category.first,
     price: "25€",
+    city: "Paris",
     guests: 6,
     user: user2,
     remote_picture_url: "https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg"
@@ -110,6 +112,7 @@ menu3 = Menu.create(
     name: "Pad thaï",
     description: "Douceur thaïlandaise préparée selon la tradition",
     category: Category.fifth,
+    city: "Paris",
     price: "16€",
     guests: 7,
     user: user3,
@@ -119,6 +122,7 @@ menu3 = Menu.create(
 menu4 = Menu.create!(
     name: "Tapas",
     description: "hello",
+    city: "Nantes",
     category: Category.all[7],
     price: "25€",
     guests: 10,
@@ -128,6 +132,7 @@ menu4 = Menu.create!(
 
 menu5 = Menu.create!(
     name: "Filet de bar rôti, pommes boulangères",
+    city: "Nantes",
     description: "Emulsion",
     category: Category.first,
     price: "23€",
@@ -138,6 +143,7 @@ menu5 = Menu.create!(
 
 menu6 = Menu.create!(
     name: "Plateau sushis maison",
+    city: "Nantes",
     description: "hello",
     category: Category.third,
     price: "20€",
