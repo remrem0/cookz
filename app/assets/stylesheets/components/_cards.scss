@@ -1,12 +1,14 @@
 .card {
   height: 175px;
-  font-weight: bold;
+  font-weight: lighter;
   text-shadow: 0 2px 3px rgba(0,0,0,0.5);
   background-size: cover !important;
   color: white;
   position: relative;
   border-radius: 4px;
   margin-bottom: 20px;
+  font-family: 'Cabin', sans-serif;
+
 }
 .card-user {
   position: absolute;
@@ -15,10 +17,10 @@
 }
 .card-category {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 10px;
-  font-size: 16px;
-  background-color:#7B0828;
+  font-size: 20px;
+  background-color:rgba(123,8,40, 0.6);
   color: white;
   border-radius: 5px;
 
@@ -27,7 +29,9 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color:#7B0828;
+  background-color:rgba(123,8,40, 0.6);
+  border-radius: 5px;
+  font-size: 20px;
   color: white;
   border-radius: 5px;
 }
@@ -35,9 +39,10 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background-color:#7B0828;
   color: white;
   border-radius: 5px;
+  font-size: 20px;
+  background-color:rgba(123,8,40, 0.6);
 }
 .card-description h2 {
   font-size: 24px;
