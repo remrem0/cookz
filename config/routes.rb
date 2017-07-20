@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'booking/new'
+
+  get 'booking/create'
+
   devise_for :users
   root to: 'pages#home'
   resources :menus, only: [:index, :show] do

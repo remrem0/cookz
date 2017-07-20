@@ -66,12 +66,12 @@ user6 = User.create(
     )
 
 user7 = User.create(
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    email: Faker::Internet.email,
+    first_name: "Micha",
+    last_name: "Boidel",
+    email: "m.boidel@mail.me",
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "https://dahlrestaurantgroup.com/wp-content/uploads/2017/03/Chef-Lisa-Dahl1-852x852.jpg"
+    remote_avatar_url: "https://www.plantoeat.com/blog/wp-content/about_images/face-inspiredtoaction.jpg"
     )
 
 rem = User.create(
@@ -80,6 +80,14 @@ rem = User.create(
     email: "rem.lichani@gmail.com",
     address: "Rue sisi",
     password: "bcg0802"
+    )
+
+con = User.create(
+  first_name: "Consti",
+    last_name: "11",
+    email: "constantin.pahl@gmail.com",
+    address: "Rue soso",
+    password: "Lewagon2017"
     )
 
 puts "Creating categories..."
@@ -91,6 +99,7 @@ menu1 = Menu.create(
     description: "Excellent risotto crémeux et avec une note de citron. Tomate fraîche cuite au four.",
     category: Category.second,
     price: "17€",
+    city: "Paris",
     guests: 5,
     user: user1,
     remote_picture_url: "https://static.pexels.com/photos/505330/pexels-photo-505330.jpeg"
@@ -101,6 +110,7 @@ menu2 = Menu.create(
     description: "Viande issue de l'agriculture biologique",
     category: Category.first,
     price: "25€",
+    city: "Paris",
     guests: 6,
     user: user2,
     remote_picture_url: "https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg"
@@ -110,6 +120,7 @@ menu3 = Menu.create(
     name: "Pad thaï",
     description: "Douceur thaïlandaise préparée selon la tradition",
     category: Category.fifth,
+    city: "Paris",
     price: "16€",
     guests: 7,
     user: user3,
@@ -119,6 +130,7 @@ menu3 = Menu.create(
 menu4 = Menu.create!(
     name: "Tapas",
     description: "hello",
+    city: "Nantes",
     category: Category.all[7],
     price: "25€",
     guests: 10,
@@ -127,7 +139,8 @@ menu4 = Menu.create!(
     )
 
 menu5 = Menu.create!(
-    name: "Filet de bar rôti, pommes boulangères",
+    name: "Filet de bar rôti",
+    city: "Nantes",
     description: "Emulsion",
     category: Category.first,
     price: "23€",
@@ -138,6 +151,7 @@ menu5 = Menu.create!(
 
 menu6 = Menu.create!(
     name: "Plateau sushis maison",
+    city: "Nantes",
     description: "hello",
     category: Category.third,
     price: "20€",
@@ -145,4 +159,16 @@ menu6 = Menu.create!(
     user: user6,
     remote_picture_url: "https://static.pexels.com/photos/213939/pexels-photo-213939.jpeg"
     )
+
+menu6 = Menu.create!(
+    name: "Hamburger et frites maison",
+    city: "Nantes",
+    description: "Viande issue de l'agriculture biologique. Frites de patates de Noirmoutier avec une pointe de gros sel. Un délice !",
+    category: Category.first,
+    price: "13€",
+    guests: 4,
+    user: user7,
+    remote_picture_url: "https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg"
+    )
+
 puts "Finished"

@@ -68,8 +68,8 @@
   padding-top: 5%;
 }
 .search-card {
-  background-color: #FFFABC;
-  padding: 1%;
+  background-color: #F3EFF5;
+  padding: 2px;
   border-radius: 5px;
 }
 
@@ -82,9 +82,9 @@
 }
 
 #text-header {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background-color: #FFFABC;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #F3EFF5;
 }
 
 .wrapper-white {
@@ -97,3 +97,16 @@
   margin-bottom: 9px;
 }
 
+h2.text-center {
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+#main_h1 {
+  font-size: 55px;
+  font-family: "Cabin", sans-serif;
+}
+
+img {
+  padding-bottom: 5px;
+}
