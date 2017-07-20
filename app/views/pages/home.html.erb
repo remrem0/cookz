@@ -1,32 +1,30 @@
-<div class="container-grey">
-<div class="text-center" id="text-welcome">
-  <h1>Welcome to the Homepage of WeedCookerzzz</h1>
-  <h3>Only the big boyz 'llowed to taste this GANJA 18++ or them popo gon kill ya righ' away</h3>
-</div>
+<div class="container-grey", style="background: linear-gradient(100deg, rgba(236, 233, 230, 0.3) 0%, rgba(255, 255, 255, 0.3) 50%),  url('http://images.huffingtonpost.com/2014-03-25-co3.jpg')">
+  <div class="text-center" id="text-welcome">
+    <h1 id="main_h1">Cookz</h1>
+    <h3>Have the best cooks in town prepare your meal</h3>
+  </div>
   <div class="search-card">
     <form action="/menus" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input form-control" placeholder="Where do you live?">
+      <input type="text" name="booking[location]" class="navbar-wagon-search-input form-control" placeholder="Which city do you live in?">
 
-      <input type='text' class="date navbar-wagon-search-input form-control" id='datetimepicker1' placeholder="When will you eat?" />
+      <input type='text' name="booking[date]" class="date navbar-wagon-search-input form-control" id='datetimepicker1' placeholder="When will you eat?" />
 
       <div class="required menu_category navbar-wagon-search-input">
-        <select name="menu[:category_id]" id="menu_category_id" class="form-control  select required">
+        <select name="menu[category_id]" id="menu_category_id" class="form-control  select required">
           <option value="" disabled selected>What will you eat?</option>
           <% @categories.each do |category| %>
-          <option value="<%= category.id %>"><%= category.name  %></option>
+            <option value="<%= category.id %>"><%= category.name  %></option>
           <% end %>
         </select>
       </div>
-
       <div class="navbar-wagon-search-input">
-        <select name="" id="guests_number" class="form-control select required">
+        <select name="booking[guests]" id="guests_number" class="form-control select required">
           <option value="" disabled selected>How many people?</option>
           <% @numbers.each do |number| %>
-          <option value=""><%= number  %></option>
+            <option value="<%= number %>"><%= number  %></option>
           <% end %>
         </select>
       </div>
-
       <div>
         <button type="submit" class="navbar-wagon-search-btn">
           <i class="fa fa-search"></i>
@@ -38,28 +36,29 @@
 
 
 <div id="text-header">
-  <h2 class="text-center">Our crem dela MOTHAFUCKING CREM C(r)ookz</h2>
+  <h2 class="text-center">Our best-rated Cookz</h2>
 </div>
 
-<div class="container">
-<div class="row" id="row-yellow">
+<div class="wrapper-white">
+  <div class="row">
     <% @menus.each do |menu| %>
     <div class="col-xs-12 col-sm-6">
 
-      <div class="card" style="background: linear-gradient(100deg, rgba(236, 233, 230, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%),  url('<%= cl_image_path(menu.picture) %>')">
+      <div class="card" style="background: linear-gradient(100deg, rgba(0, 0, 0, 0.2)0%, rgba(123, 8, 40, 0.3)50%),  url('<%= cl_image_path(menu.picture) %>')">
         <div class="card-category">
           <%= menu.name %>
         </div>
         <div class="card-price">
-          <%="Price: #{menu.price} €" %>
+          <%="#{menu.price} €" %>
         </div>
-        <div class="card-guests">
-          <%="For #{menu.guests} people" %>
+        <div class="card-guests align-items">
+          <%="#{menu.guests}"%>
+          <%= image_tag("guests.png") %>
         </div>
         <div class="card-user">
           <%= cl_image_tag(menu.user.avatar, class: "avatar-large")%>
         </div>
-        <%= link_to "", menu_path(:menu_id), class:"card-link"%>
+       <%= link_to "", menu_path(menu.id), class:"card-link"%>
       </div>
 
     </div>
@@ -69,11 +68,11 @@
 
 
 <% content_for :after_js do %>
-  <script type="text/javascript">
-    $(function () {
-      $('#datetimepicker1').datetimepicker({
-        format: 'DD/MM/YYYY'
-      });
+<script type="text/javascript">
+  $(function () {
+    $('#datetimepicker1').datetimepicker({
+      format: 'DD/MM/YYYY'
     });
-  </script>
+  });
+</script>
 <% end %>
