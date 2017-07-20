@@ -2,44 +2,39 @@
   padding: 150px;
   position: relative;
   border-radius: 5px;
-  background-size: cover;
-}
-
-.menu-picture > h2 {
+  background-size: 100%;
+  h2 {
   position: absolute;
   top: 2px;
   left: 5px;
   margin-top: 2px;
+  font-size: 50px;
+  font-family: 'Cabin', sans-serif;
+  }
 }
 
 .menu-header {
-  margin: 10px 0px 10px 0px;
+  margin-bottom: 10px;
 }
 
 .menu-profile {
-  margin: 10px;
+  margin: 0;
+  padding-left: 0;
   height: 300px;
 }
 
 
 .menu-profile, .menu-content {
-  background-color: #F2ECDC;
+  background-color: white;
   border-radius: 5px;
 }
 
 .menu-content {
   position: relative;
   padding: 5px;
-}
-
-.menu-content > .menu-price {
-  position: absolute;
-  bottom: 2px;
-  right: 5px;
-}
-
-.menu-content > .menu-guests {
-  position: absolute;
+  hr {
+    margin: 10px;
+  }
 }
 
 .flexbox {
@@ -54,15 +49,18 @@
 }
 
 .menu-profile, .menu-booking, .menu-content {
-    font-family: 'Old Standard TT', serif;
-}
-
-.menu-picture > h2 {
-  font-size: 50px;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Old Standard TT', serif;
 }
 
 .btn-booking {
-  width: 92.5% !important;
+  width: 100% !important;
+}
+
+.container {
+  padding: 50px;
+}
+
+.nopadding {
+ padding: 0 !important;
 }
 
