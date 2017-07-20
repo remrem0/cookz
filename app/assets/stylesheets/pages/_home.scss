@@ -4,7 +4,7 @@
  * ------------------------------------- */
  /* Navbar search form */
 .navbar-wagon-search {
-  flex: 0 1 400px;
+  flex: 1 1 400px;
   display: flex;
   justify-content: flex-end;
   border-radius: 2px;
@@ -16,13 +16,13 @@
   color: #A0A3A3;
   border: none;
   background: transparent;
-  position: absolute;
+  // position: absolute;
   right: 1%;
   top: 1px;
   z-index: 1;
 }
 .navbar-wagon-search-input {
-  flex: 0 1 300px;
+  flex: 1 1 0;
   transition: all 0.15s ease;
   line-height: 40px;
   font-weight: lighter;
@@ -36,6 +36,23 @@
   select {
     padding: none;
   }
+}
+
+.navbar-wagon-search-input-price {
+  flex: 1 1 0;
+  transition: all 0.15s ease;
+  line-height: 40px;
+  font-weight: lighter;
+  color: #666666;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40px;
+  box-shadow: none;
 }
 
 .navbar-wagon-search-input:focus  {
@@ -62,8 +79,8 @@
 
 .container-grey {
   background-color: #F5F5F5;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 10%;
   padding-top: 5%;
 }
@@ -74,7 +91,9 @@
 }
 
 .form-control {
-  height: 46px !important;
+  height: 47px !important;
+  color: #770A28 !important;
+  width: 97% !important;
 }
 
 #text-welcome {
@@ -109,4 +128,10 @@ h2.text-center {
 
 img {
   padding-bottom: 5px;
+}
+
+.search-price {
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
 }
