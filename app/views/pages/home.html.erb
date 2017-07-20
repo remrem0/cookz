@@ -12,6 +12,7 @@
       <div class="required menu_category navbar-wagon-search-input">
         <select name="menu[category_id]" id="menu_category_id" class="form-control  select required">
           <option value="" disabled selected>What will you eat?</option>
+          <option>Any</option>
           <% @categories.each do |category| %>
             <option value="<%= category.id %>"><%= category.name  %></option>
           <% end %>
@@ -65,7 +66,6 @@
     <% end %>
   </div>
 </div>
-
 
 <% content_for :after_js do %>
 <script type="text/javascript">

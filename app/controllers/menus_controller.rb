@@ -4,11 +4,16 @@
 
   def index
     @menus = Menu.all
+    # binding.pry
     if params
-      if params[:booking][:location]
+      if params[:booking][:location].strip == ""
+        return @menu
+      elsif params[:booking][:location]
         @menus = @menus.where(city: params[:booking][:location])
       end
-      if params[:menu][:category_id]
+      if params[:menu].nil? || params[:menu][:category_id] == "Any"
+        return @menus
+      elsif params[:menu][:category_id]
         @menus = @menus.where(category_id: params[:menu][:category_id])
       end
       if params[:booking][:guests]
