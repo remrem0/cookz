@@ -13,11 +13,7 @@ class BookingsController < ApplicationController
     @booking.menu = @menu
     @booking.date = booking_date
     @booking.price = @menu.guests*@menu.price
-    @booking.user = @user
-    # status
-    #
-
-    binding.pry
+    @booking.user = current_user
     @booking.save
     # redirect_to account_booking_path(@booking) ---- to be added
   end
