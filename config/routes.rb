@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'booking/new'
-
-  get 'booking/create'
-
   devise_for :users
+  as :user do
+    get 'account/profile', :to => 'account/profiles#show', :as => :user_root # Rails 3
+  end
+
   root to: 'pages#home'
   resources :menus, only: [:index, :show] do
     resources :bookings, only: [:new, :create]
