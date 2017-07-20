@@ -168,7 +168,7 @@ menu6 = Menu.create!(
     category: Category.first,
     price: "13€",
     guests: 4,
-    user: user7,
+    user: rem,
     remote_picture_url: "https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg"
     )
 
