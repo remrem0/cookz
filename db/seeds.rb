@@ -66,12 +66,12 @@ user6 = User.create(
     )
 
 user7 = User.create(
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    email: Faker::Internet.email,
+    first_name: "Micha",
+    last_name: "Boidel",
+    email: "m.boidel@mail.me",
     address: Faker::Address.street_address,
     password: Faker::Internet.password(8),
-    remote_avatar_url: "https://dahlrestaurantgroup.com/wp-content/uploads/2017/03/Chef-Lisa-Dahl1-852x852.jpg"
+    remote_avatar_url: "https://www.plantoeat.com/blog/wp-content/about_images/face-inspiredtoaction.jpg"
     )
 
 rem = User.create(
@@ -159,4 +159,16 @@ menu6 = Menu.create!(
     user: user6,
     remote_picture_url: "https://static.pexels.com/photos/213939/pexels-photo-213939.jpeg"
     )
+
+menu6 = Menu.create!(
+    name: "Hamburger et frites maison",
+    city: "Nantes",
+    description: "Viande issue de l'agriculture biologique. Frites de patates de Noirmoutier avec une pointe de gros sel. Un délice !",
+    category: Category.first,
+    price: "13€",
+    guests: 4,
+    user: user7,
+    remote_picture_url: "https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg"
+    )
+
 puts "Finished"
