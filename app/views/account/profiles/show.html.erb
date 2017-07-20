@@ -1,4 +1,4 @@
-<div class="profile-card text-center", style="background: /*linear-gradient(100deg, rgba(236, 233, 230, 0.4) 50%, rgba(255, 255, 255, 0.3) 0%),*/  url('http://res.cloudinary.com/dcn1yrirx/image/upload/v1500548064/banner_profile_pjmrt3.png')">
+<!-- <div class="profile-card text-center", style="background: /*linear-gradient(100deg, rgba(236, 233, 230, 0.4) 50%, rgba(255, 255, 255, 0.3) 0%),*/  url('http://res.cloudinary.com/dcn1yrirx/image/upload/v1500548064/banner_profile_pjmrt3.png')">
   <h1 class= "text-center">Hello <%= @user.first_name  %></h1>
   <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
   <ul class="nav nav-pills">
@@ -15,7 +15,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+    <div class="col-xs-9 col-sm-4 col-sm-offset-4">
     <div class="account-infos">
         <h3 class= text-center>Account infos </h3>
         <p> First name: <%= @user.first_name  %></p>
@@ -25,4 +25,37 @@
       </div>
     </div>
   </div>
+</div> -->
+
+
+
+<div class="profile-header-wrapper">
+  <div class="container profile-header-container text-center">
+    <div class="profile-header-infos">
+      <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
+      <h1><%= @user.first_name  %></h1>
+      <h2>"Cookz for life"</h2>
+    </div>
+    <div class="tabs">
+      <a class="tab active" href="#">
+        <h3>Profile Info</h3>
+      </a>
+      <a class="tab" href="#">
+        <h3>My reservations</h3>
+      </a>
+      <a class="tab" href="#">
+        <h3>My menus</h3>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="account-infos">
+    <h3 class= text-center>Account infos </h3>
+    <p> First name: <%= @user.first_name  %></p>
+    <p> Last name: <%= @user.last_name  %></p>
+    <p> Email: <%= @user.email  %></p>
+    <p> Address: <%= @user.address %></p>
+  </div>
+</div>
 </div>
