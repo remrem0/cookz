@@ -2,7 +2,8 @@
 <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :description, label: "Tell us a bit about your diner..." %>
+    <%= f.input :description, as: :text, label: "Tell us a bit about your diner..." %>
+    <%= f.input :datetime, as: :datetime, label: "When exactly would you like to eat?" %>
   </div>
 
   <div class="form-actions">
