@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-7">
         <h1>Book this menu!</h1>
-        <%= render 'form', booking: @booking %>
+        <%= render 'form', menu: @menu, booking: @booking %>
       </div>
       <div class="col-xs-5">
         <div class="booking-picture">
@@ -11,7 +11,7 @@
           </div>
           <div class="booking-info">
             <h2 class="text-center"> <%= @booking.menu.name %> </h2>
-            <p>Price: <%= @booking.menu.price %></p>
+            <p>Price: <%= @booking.menu.guests %> x <%= @booking.menu.price %> = <%= @booking.menu.guests*@booking.menu.price %>€</p>
           </div>
         </div>
       </div>
