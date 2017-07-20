@@ -14,10 +14,21 @@
 
 }
 
-#footer ul a:hover {
-  color: #F0175B;
+#footer ul .fa-twitter:hover {
+  color: #1DA1F2;
 }
 
+#footer ul .fa-facebook:hover {
+  color: #4867AA;
+}
+
+#footer ul .fa-instagram:hover {
+  color: #E7008A;
+}
+
+#footer ul .fa-youtube:hover {
+  color: #E42B26;
+}
 
 #footer p {
   color: #F4F5F4;
