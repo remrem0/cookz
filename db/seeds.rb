@@ -79,7 +79,8 @@ rem = User.create(
     last_name: "Lichani",
     email: "rem.lichani@gmail.com",
     address: "Rue sisi",
-    password: "bcg0802"
+    password: "bcg0802",
+    remote_avatar_url: "https://www.plantoeat.com/blog/wp-content/about_images/face-inspiredtoaction.jpg"
     )
 
 con = User.create(
