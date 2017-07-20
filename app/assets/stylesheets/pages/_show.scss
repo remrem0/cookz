@@ -2,7 +2,7 @@
   padding: 150px;
   position: relative;
   border-radius: 5px;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .menu-picture > h2 {
@@ -18,12 +18,13 @@
 
 .menu-profile {
   margin: 10px;
+  padding-left: 0;
   height: 300px;
 }
 
 
 .menu-profile, .menu-content {
-  background-color: #F2ECDC;
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -64,5 +65,13 @@
 
 .btn-booking {
   width: 92.5% !important;
+}
+
+.container {
+  padding: 50px;
+}
+
+.nopadding {
+   padding: 0 !important;
 }
 
