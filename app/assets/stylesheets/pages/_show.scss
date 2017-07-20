@@ -13,11 +13,11 @@
 }
 
 .menu-header {
-  margin: 10px 0px 10px 0px;
+  margin-bottom: 10px;
 }
 
 .menu-profile {
-  margin: 10px;
+  margin: 0;
   padding-left: 0;
   height: 300px;
 }
@@ -31,6 +31,9 @@
 .menu-content {
   position: relative;
   padding: 5px;
+  hr {
+    margin: 10px;
+  }
 }
 
 .menu-content > .menu-price {
@@ -55,7 +58,7 @@
 }
 
 .menu-profile, .menu-booking, .menu-content {
-    font-family: 'Old Standard TT', serif;
+  font-family: 'Old Standard TT', serif;
 }
 
 .menu-picture > h2 {
@@ -64,7 +67,7 @@
 }
 
 .btn-booking {
-  width: 92.5% !important;
+  width: 100% !important;
 }
 
 .container {
@@ -72,6 +75,6 @@
 }
 
 .nopadding {
-   padding: 0 !important;
+ padding: 0 !important;
 }
 
