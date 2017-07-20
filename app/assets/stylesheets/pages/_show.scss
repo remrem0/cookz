@@ -3,13 +3,14 @@
   position: relative;
   border-radius: 5px;
   background-size: 100%;
-}
-
-.menu-picture > h2 {
+  h2 {
   position: absolute;
   top: 2px;
   left: 5px;
   margin-top: 2px;
+  font-size: 50px;
+  font-family: 'Cabin', sans-serif;
+  }
 }
 
 .menu-header {
@@ -36,16 +37,6 @@
   }
 }
 
-.menu-content > .menu-price {
-  position: absolute;
-  bottom: 2px;
-  right: 5px;
-}
-
-.menu-content > .menu-guests {
-  position: absolute;
-}
-
 .flexbox {
   display: flex;
   justify-content: space-between;
@@ -59,11 +50,6 @@
 
 .menu-profile, .menu-booking, .menu-content {
   font-family: 'Old Standard TT', serif;
-}
-
-.menu-picture > h2 {
-  font-size: 50px;
-  font-family: 'Cabin', sans-serif;
 }
 
 .btn-booking {
