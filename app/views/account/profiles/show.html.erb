@@ -37,19 +37,18 @@
       <h2>"Cookz for life"</h2>
     </div>
     <div class="tabs">
-      <a class="tab active" href="#">
-        <h3>Profile Info</h3>
+        <%= link_to  "Profile Info", account_profile_path, class:"tab active"%>
       </a>
       <a class="tab" href="#">
         <h3>My reservations</h3>
       </a>
-      <a class="tab" href="#">
-        <h3>My menus</h3>
+        <%= link_to  "My menus", account_menus_path, class:"tab"%>
       </a>
+      </div>
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container" id="account-infos">
   <div class="account-infos">
   <h5 class= text-center><%= link_to 'Edit my profile', edit_user_registration_path %>  </h5>
     <p> First name: <%= @user.first_name  %></p>
