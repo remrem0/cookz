@@ -1,4 +1,4 @@
-  class MenusController < ApplicationController
+class MenusController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_menu, only: [:show]
 
@@ -22,10 +22,15 @@
       @menus = @menus.where(guests: params[:booking][:guests])
     end
 
-    if params[:menu][:minprice]
+    if params[:menu][:minprice] == ""
+      @menus
+    elsif params[:menu][:minprice]
       @menus = @menus.where("price > ?",  params[:menu][:minprice].to_i)
     end
-    if params[:menu][:maxprice]
+
+    if params[:menu][:maxprice] == ""
+      @menus
+    elsif params[:menu][:maxprice]
       @menus = @menus.where("price < ?",  params[:menu][:maxprice].to_i)
     end
     # end
