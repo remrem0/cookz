@@ -36,6 +36,19 @@
 
 .profile-header-wrapper {
   background-size: cover;
+  background-color: #27213C;
+}
+
+.profile-header-container {
+  position: relative;
+}
+
+.tabs {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  right: 50px;
+  background-color: #27213C;
 }
 
 .profile-header-container img {
@@ -50,7 +63,6 @@
 }
 .profile-header-container h2 {
   color: white;
-  opacity: 0.4;
   font-size: 18px;
   font-weight: lighter;
   margin-bottom: 0;
@@ -58,4 +70,8 @@
 }
 .profile-header-infos {
   padding: 20px 0;
+}
+
+.account-infos {
+  font-size: 700;
 }
