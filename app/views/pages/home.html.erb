@@ -1,7 +1,7 @@
 <div class="container-grey", style="background-image: linear-gradient(100deg, rgba(236, 233, 230, 0.3) 0%, rgba(123,8,40, 0.3) 50%),  url('http://images.huffingtonpost.com/2014-03-25-co3.jpg')">
   <div class="global">
     <div class="text-center" id="text-welcome">
-      <h1 id="main_h1">Cookz</h1>
+      <h1>Cookz</h1>
       <h3>Have the best cooks in town prepare your meal</h3>
     </div>
     <div class="search-card">
@@ -65,7 +65,7 @@
     <% @menus.each do |menu| %>
     <div class="col-xs-12 col-sm-6">
 
-      <div class="card" style="background: linear-gradient(100deg, rgba(0, 0, 0, 0.2)0%, rgba(123, 8, 40, 0.3)50%),  url('<%= cl_image_path(menu.picture) %>')">
+      <div class="card" style="background: linear-gradient(100deg, rgba(0, 0, 0, 0.2)0%, rgba(123, 8, 40, 0.2)50%),  url('<%= cl_image_path(menu.picture) %>')">
         <div class="card-category">
           <%= menu.name %>
         </div>
