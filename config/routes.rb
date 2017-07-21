@@ -10,10 +10,14 @@ Rails.application.routes.draw do
     resources :bookings, only: [:new, :create]
   end
   namespace :account do
-    resources :menus, only: [:index, :show, :new, :create, :edit, :update]
-    resources :bookings, only:     [:index, :show, :update]
-
-    resources :reservations, only: [:index, :show]
+    resources :menus, only:        [:index, :show, :new, :create, :edit, :update]
+    resources :bookings, only:     [:index, :show]
+    resources :reservations, only: [:index, :show] do
+      member do
+        patch "confirm"
+        patch "cancel"
+      end
+    end
     resource  :profile, only:      [:show]
   end
 end

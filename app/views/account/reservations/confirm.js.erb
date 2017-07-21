@@ -1,0 +1,5 @@
+
+
+$('[data-booking-id=<%= @booking.id %>] > .booking-status').text('confirmed');
+$('[data-booking-id=<%= @booking.id %>] > #change-booking-status-<%= @booking.id %>').addClass('hidden');
+
