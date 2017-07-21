@@ -18,6 +18,9 @@ class BookingsController < ApplicationController
     # redirect_to account_booking_path(@booking) ---- to be added
   end
 
+  def update
+  end
+
   private
 
   def booking_params

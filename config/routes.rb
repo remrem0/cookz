@@ -10,9 +10,9 @@ Rails.application.routes.draw do
     resources :bookings, only: [:new, :create]
   end
   namespace :account do
-    resources :menus, only: [:index, :show, :new, :create]
-    resources :bookings, only: [:index, :show]
+    resources :menus, only:        [:index, :show, :new, :create]
+    resources :bookings, only:     [:index, :show, :update]
     resources :reservations, only: [:index, :show]
-    resource :profile, only: [:show]
+    resource  :profile, only:      [:show]
   end
 end
