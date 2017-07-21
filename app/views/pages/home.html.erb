@@ -30,7 +30,7 @@
 
         <div class="navbar-wagon-search-input-price">
           <select name="menu[minprice]" class="form-control select required search-price">
-            <option value="">Min price (Eur)</option>
+            <option value="">Min (€)</option>
             <% @prices.each do |price| %>
             <option value="<%= price %>"><%= price %></option>
             <% end %>
@@ -39,7 +39,7 @@
 
         <div class="navbar-wagon-search-input-price">
           <select name="menu[maxprice]" class="form-control select required search-price">
-            <option value="">Max price (Eur)</option>
+            <option value="">Max (€)</option>
             <% @prices.each do |price| %>
             <option value="<%= price %>"><%= price %></option>
             <% end %>

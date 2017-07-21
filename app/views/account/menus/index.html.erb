@@ -1,17 +1,17 @@
 <div class="profile-header-wrapper">
-  <div class="container profile-header-container text-center">
-    <div class="profile-header-infos">
-      <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
-      <h1><%= @user.first_name  %></h1>
-      <h2>"Cookz for life"</h2>
+    <div class="container profile-header-container text-center">
+      <div class="profile-header-infos">
+        <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
+        <h1><%= @user.first_name  %></h1>
+        <h2>"Cookz for life"</h2>
+      </div>
+      <div class="tabs">
+        <%= link_to  "Profile Info", account_profile_path, class:"tab"%>
+        <%= link_to  "My Reservations", account_reservations_path, class:"tab"%>
+        <%= link_to  "My menus", account_menus_path, class:"tab active"%>
+      </a>
     </div>
-    <div class="tabs">
-      <%= link_to  "Profile Info", account_profile_path, class:"tab"%>
-      <%= link_to  "My Reservations", account_reservations_path, class:"tab"%>
-      <%= link_to  "My menus", account_menus_path, class:"tab active"%>
-    </a>
   </div>
-</div>
 </div>
 <div class="container">
   <div class="row">
