@@ -3,4 +3,5 @@ class Account::ProfilesController < ApplicationController
     # Let's anticipate on next week (with login)
     @user = current_user
   end
+
 end
