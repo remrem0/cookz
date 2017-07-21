@@ -12,6 +12,7 @@
       <div class="required menu_category navbar-wagon-search-input">
         <select name="menu[category_id]" id="menu_category_id" class="form-control  select required">
           <option value="" disabled selected>What will you eat?</option>
+          <option>Any</option>
           <% @categories.each do |category| %>
             <option value="<%= category.id %>"><%= category.name  %></option>
           <% end %>
@@ -21,10 +22,29 @@
         <select name="booking[guests]" id="guests_number" class="form-control select required">
           <option value="" disabled selected>How many people?</option>
           <% @numbers.each do |number| %>
-            <option value="<%= number %>"><%= number  %></option>
+            <option value="<%= number %>"><%= number %></option>
           <% end %>
         </select>
       </div>
+
+      <div class="navbar-wagon-search-input-price">
+        <select name="menu[minprice]" class="form-control select required search-price">
+          <option value="">Min price (Eur)</option>
+          <% @prices.each do |price| %>
+          <option value="<%= price %>"><%= price %></option>
+          <% end %>
+        </select>
+        </div>
+
+        <div class="navbar-wagon-search-input-price">
+          <select name="menu[maxprice]" class="form-control select required search-price">
+            <option value="">Max price (Eur)</option>
+            <% @prices.each do |price| %>
+            <option value="<%= price %>"><%= price %></option>
+            <% end %>
+          </select>
+          </div>
+
       <div>
         <button type="submit" class="navbar-wagon-search-btn">
           <i class="fa fa-search"></i>
@@ -65,7 +85,6 @@
     <% end %>
   </div>
 </div>
-
 
 <% content_for :after_js do %>
 <script type="text/javascript">

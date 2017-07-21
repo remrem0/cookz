@@ -1,0 +1,38 @@
+<div class="profile-header-wrapper">
+  <div class="container profile-header-container text-center">
+    <div class="profile-header-infos">
+      <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
+      <h1><%= @user.first_name  %></h1>
+      <h2>"Cookz for life"</h2>
+    </div>
+    <div class="tabs">
+      <a class="tab" href="#">
+        <h3>Profile Info</h3>
+      </a>
+      <a class="tab active" href="#">
+        <h3>My reservations</h3>
+      </a>
+      <a class="tab" href="#">
+        <h3>My menus</h3>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="account-infos">
+    <h3 class= text-center>My reservations </h3>
+  <% @bookings.each do |booking| %>
+  <h3>Booking menu : <%= booking.menu.name %></h3>
+
+  <h5>Status: </h5>
+  <div class="booking-status">
+  <%= booking.status %>
+  </div>
+  <h4><strong>Description: </strong><%= booking.description %></h4>
+  <h5>This booking will take place on the <%= booking.date %></h5>
+  <h4>Your revenue: <strong><%= booking.price %>€</strong></h4>
+  <br>
+  <% end %>
+  </div>
+</div>
+

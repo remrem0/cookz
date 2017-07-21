@@ -79,7 +79,8 @@ rem = User.create(
     last_name: "Lichani",
     email: "rem.lichani@gmail.com",
     address: "Rue sisi",
-    password: "bcg0802"
+    password: "bcg0802",
+    remote_avatar_url: "https://www.plantoeat.com/blog/wp-content/about_images/face-inspiredtoaction.jpg"
     )
 
 con = User.create(
@@ -145,7 +146,7 @@ menu5 = Menu.create!(
     category: Category.first,
     price: "23€",
     guests: 4,
-    user: user5,
+    user: con,
     remote_picture_url: "http://www.bureaudepresseagro.com/wp-content/uploads/2014/09/7493-Filet-de-Bar-iod%C3%A9.jpg"
     )
 
@@ -156,19 +157,36 @@ menu6 = Menu.create!(
     category: Category.third,
     price: "20€",
     guests: 9,
-    user: user6,
+    user: rem,
     remote_picture_url: "https://static.pexels.com/photos/213939/pexels-photo-213939.jpeg"
     )
 
-menu6 = Menu.create!(
+menu7 = Menu.create!(
     name: "Hamburger et frites maison",
     city: "Nantes",
     description: "Viande issue de l'agriculture biologique. Frites de patates de Noirmoutier avec une pointe de gros sel. Un délice !",
     category: Category.first,
     price: "13€",
     guests: 4,
-    user: user7,
+    user: rem,
     remote_picture_url: "https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg"
     )
+
+booking1 = Booking.create!(
+    description: "Hamburgers at Hamburg",
+    price: 52,
+    date: "Thu, 20 Jul 2017 13:46:00 UTC +00:00",
+    user: con,
+    menu: menu7
+  )
+
+booking2 = Booking.create!(
+    description: "Sushis in Sydney",
+    price: 180,
+    date: "Fri, 19 Jun 2017 13:46:00 UTC +00:00",
+    user: con,
+    menu: menu6
+  )
+
 
 puts "Finished"

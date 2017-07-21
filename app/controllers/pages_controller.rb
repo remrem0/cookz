@@ -6,5 +6,6 @@ class PagesController < ApplicationController
     @menu = Menu.new
     @categories = Category.all
     @numbers = (1..99)
+    @prices = (10..120)
   end
 end

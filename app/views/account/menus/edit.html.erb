@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+
+      <div class="form-login">
+       <h2>Edit <%= @menu.name %></h2>
+        <%= simple_form_for([:account, @menu]) do |f| %>
+          <%= f.error_notification %>
+
+          <div class="form-inputs">
+            <%= f.input :name, required: true, autofocus: true, placeholder: "Your menu's name" %>
+            <%= f.input :description, required: true, placeholder: "Your menu's description" %>
+            <%= f.input :price, required: true, placeholder: "Your menu's price" %>
+            <%= f.input :guests, required: true, placeholder: "Estimated number of guests" %>
+            <%= f.input :picture, required: true %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Update", class:"btn btn-danger" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

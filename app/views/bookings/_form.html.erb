@@ -1,8 +1,11 @@
-<%= simple_form_for(booking_new_path) do |f| %>
+<%= simple_form_for([menu, booking]) do |f| %>
 <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :description, label: "Tell us a bit about your diner..." %>
+    <%= f.input :description, as: :text, label: "Tell us a bit about your diner..." %>
+    <%= f.simple_fields_for :date do |date_form| %>
+      <%= date_form.input :booking_date, as: :datetime, label: "When exactly would you like to eat?" %>
+    <% end %>
   </div>
 
   <div class="form-actions">

@@ -3,6 +3,7 @@ class Menu < ApplicationRecord
   belongs_to :category
   mount_uploader :picture, PhotoUploader
 
+  has_many :bookings, dependent: :destroy
 
   validates :name, presence: true, allow_blank: false
   validates :description, presence: true, allow_blank: false
