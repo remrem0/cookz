@@ -122,37 +122,37 @@ menu1 = Menu.create(
     )
 
 menu2 = Menu.create(
-    name: "Côte de boeuf (500g)",
-    description: "Viande issue de l'agriculture biologique",
-    category: Category.first,
-    price: "25€",
-    city: "Paris",
-    guests: 6,
-    user: user2,
-    remote_picture_url: "https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg"
-    )
+  name: "Côte de boeuf (500g)",
+  description: "Viande issue de l'agriculture biologique",
+  category: Category.first,
+  price: "25€",
+  city: "Paris",
+  guests: 6,
+  user: user2,
+  remote_picture_url: "https://static.pexels.com/photos/65175/pexels-photo-65175.jpeg"
+  )
 
 menu3 = Menu.create(
-    name: "Pad thaï",
-    description: "Douceur thaïlandaise préparée selon la tradition",
-    category: Category.fifth,
-    city: "Paris",
-    price: "16€",
-    guests: 7,
-    user: user3,
-    remote_picture_url: "http://img.taste.com.au/-rXeYPJs/taste/2016/11/chicken-pad-thai-94082-1.jpeg"
-    )
+  name: "Pad thaï",
+  description: "Douceur thaïlandaise préparée selon la tradition",
+  category: Category.fifth,
+  city: "Paris",
+  price: "16€",
+  guests: 7,
+  user: user3,
+  remote_picture_url: "http://img.taste.com.au/-rXeYPJs/taste/2016/11/chicken-pad-thai-94082-1.jpeg"
+  )
 
 menu4 = Menu.create!(
-    name: "Tapas",
-    description: "hello",
-    city: "Nantes",
-    category: Category.all[7],
-    price: "25€",
-    guests: 10,
-    user: user4,
-    remote_picture_url: "http://www.eatapas.co.uk/img/cms/EATAPAS%20SUGGESTIONS/Cheese%20Consejos/CHEESE%20TRAY.jpg"
-    )
+  name: "Tapas",
+  description: "hello",
+  city: "Nantes",
+  category: Category.all[7],
+  price: "25€",
+  guests: 10,
+  user: user4,
+  remote_picture_url: "http://www.eatapas.co.uk/img/cms/EATAPAS%20SUGGESTIONS/Cheese%20Consejos/CHEESE%20TRAY.jpg"
+  )
 
 menu5 = Menu.create!(
     name: "Filet de bar rôti",
