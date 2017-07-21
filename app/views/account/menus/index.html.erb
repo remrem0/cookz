@@ -1,15 +1,13 @@
-<div class="profile-header-wrapper", style="background: linear-gradient(100deg, rgba(236, 233, 230, 0.3) 0%, rgba(255, 255, 255, 0.3) 50%),  url('http://res.cloudinary.com/dcn1yrirx/image/upload/v1500569315/banner_profile_nxiyjq.png')">
-  <div class="container profile-header-container text-center">
-    <div class="profile-header-infos">
-      <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
-      <h1><%= @user.first_name  %></h1>
-      <h2>"Cookz for life"</h2>
-    </div>
-    <div class="tabs">
+<div class="profile-header-wrapper">
+    <div class="container profile-header-container text-center">
+      <div class="profile-header-infos">
+        <%= cl_image_tag(@user.avatar, class:"avatar-medium") %>
+        <h1><%= @user.first_name  %></h1>
+        <h2>"Cookz for life"</h2>
+      </div>
+      <div class="tabs">
         <%= link_to  "Profile Info", account_profile_path, class:"tab"%>
-      <a class="tab" href="#">
-        <h3>My reservations</h3>
-      </a>
+        <%= link_to  "My Reservations", account_reservations_path, class:"tab"%>
         <%= link_to  "My menus", account_menus_path, class:"tab active"%>
       </a>
     </div>
@@ -30,7 +28,7 @@
           <%="#{menu.guests}"%>
           <%= image_tag("guests.png") %>
         </div>
-       <%= link_to "", account_menu_path(menu.id), class:"card-link"%>
+        <%= link_to "", account_menu_path(menu.id), class:"card-link"%>
       </div>
     </div>
     <% end %>

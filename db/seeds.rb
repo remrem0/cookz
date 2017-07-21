@@ -88,11 +88,15 @@ con = User.create(
     last_name: "11",
     email: "constantin.pahl@gmail.com",
     address: "Rue soso",
-    password: "Lewagon2017"
+    password: "Lewagon2017",
+    remote_avatar_url: "http://www.grandlifehotels.com/wp-content/uploads/2016/10/psycho-400x400-c-default.jpg"
     )
 
 puts "Creating categories..."
-Category.create([{name:"French"}, {name:"Italian"}, {name:"Japanese"}, {name:"Chinese"}, {name: "Thaï"}, {name: "German"}, {name:"Spanish"}, {name: "Mexican"}])
+categories_attributes = [{ name: "French" }, {name:"Italian"}, {name:"Japanese"}, {name:"Chinese"}, {name: "Thaï"}, {name: "German"}, {name:"Spanish"}, {name: "Mexican"}]
+categories_attributes.each do |cat|
+  Category.create!(cat)
+end
 
 puts "Creating menus..."
 menu1 = Menu.create(
@@ -127,7 +131,7 @@ menu3 = Menu.create(
     user: user3,
     remote_picture_url: "http://img.taste.com.au/-rXeYPJs/taste/2016/11/chicken-pad-thai-94082-1.jpeg"
     )
-
+    p Category.all[7]
 menu4 = Menu.create!(
     name: "Tapas",
     description: "hello",
@@ -157,7 +161,7 @@ menu6 = Menu.create!(
     category: Category.third,
     price: "20€",
     guests: 9,
-    user: rem,
+    user: con,
     remote_picture_url: "https://static.pexels.com/photos/213939/pexels-photo-213939.jpeg"
     )
 
@@ -168,7 +172,7 @@ menu7 = Menu.create!(
     category: Category.first,
     price: "13€",
     guests: 4,
-    user: rem,
+    user: con,
     remote_picture_url: "https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg"
     )
 
