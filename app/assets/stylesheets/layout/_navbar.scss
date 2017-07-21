@@ -29,6 +29,7 @@
   width: 50px;
 }
 
+
 /* Navbar right section (with form, links, button) */
 .navbar-wagon-right {
   display: flex;
@@ -65,9 +66,9 @@
   border: 2px solid #7B0828;
 }
 .navbar-wagon-button:hover {
-  color: white;
-  background: #7B0828;
-  border-color: #7B0828;
+  color: #7B0828;
+  background: white;
+  border: 1px solid #7B0828;
 }
 
 
