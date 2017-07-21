@@ -1,0 +1,9 @@
+// Booking status
+// en fonction du booking.status
+$('[data-booking-id=<%= @booking.id %>] > .booking-status').text('cancelled');
+$('[data-booking-id=<%= @booking.id %>] > #change-booking-status-<%= @booking.id %>').addClass('hidden');
+
+
+// $('[data-booking-id=<%= @booking.id %>] > .booking-status').text('confirmed');
+// $('[data-booking-id=<%= @booking.id %>] > #change-booking-status').addClass('hidden');
+

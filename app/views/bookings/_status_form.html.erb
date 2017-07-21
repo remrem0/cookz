@@ -1,0 +1,7 @@
+<%= simple_form_for([:account, booking], url: account_reservation_path(booking), method: :patch) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :status, as: :text %>
+  <%= f.submit "Accept booking" %>
+<% end %>
+

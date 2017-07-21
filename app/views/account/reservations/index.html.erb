@@ -12,21 +12,35 @@
     </div>
   </div>
 </div>
+
 <div class="container">
   <div class="account-infos">
     <h3 class= text-center>My reservations </h3>
-    <% @bookings.each do |booking| %>
-    <h3>Booking menu : <%= booking.menu.name %></h3>
 
-    <h5>Status: </h5>
-    <div class="booking-status">
-      <%= booking.status %>
+    <% @bookings.each do |booking| %>
+    <div data-booking-id= <%= booking.id %>>
+      <h3>Booking menu : <%= booking.menu.name %></h3>
+
+      <h5>Status: </h5>
+      <div class="booking-status">
+        <%= booking.status %>
+      </div>
+
+      <div id="change-booking-status-<%= booking.id %>">
+        <% if booking.status == "pending" %>
+          <%= link_to "Confirm booking", confirm_account_reservation_path(booking), method: :patch, remote: true %>
+          <%= link_to "Cancel booking", cancel_account_reservation_path(booking), method: :patch, remote: true %>
+        <% end %>
+      </div>
+
+
+      <h4><strong>Description: </strong><%= booking.description %></h4>
+      <h5>This booking will take place on the <%= booking.date %></h5>
+      <h4>Your revenue: <strong><%= booking.price %>€</strong></h4>
+      <br>
+      <% end %>
+
     </div>
-    <h4><strong>Description: </strong><%= booking.description %></h4>
-    <h5>This booking will take place on the <%= booking.date %></h5>
-    <h4>Your revenue: <strong><%= booking.price %>€</strong></h4>
-    <br>
-    <% end %>
   </div>
 </div>
 
