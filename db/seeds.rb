@@ -110,6 +110,17 @@ menu1 = Menu.create(
     remote_picture_url: "https://static.pexels.com/photos/505330/pexels-photo-505330.jpeg"
     )
 
+menu1 = Menu.create(
+    name: "Pizza 4 saisons",
+    description: "Pizza maison cuisinée à l'aide d'aliments frais issus de l'agriculture biologique.",
+    category: Category.second,
+    price: "12€",
+    city: "Paris",
+    guests: 5,
+    user: user6,
+    remote_picture_url: "https://static.pexels.com/photos/7658/food-pizza-box-chalkboard.jpg"
+    )
+
 menu2 = Menu.create(
     name: "Côte de boeuf (500g)",
     description: "Viande issue de l'agriculture biologique",
@@ -131,7 +142,7 @@ menu3 = Menu.create(
     user: user3,
     remote_picture_url: "http://img.taste.com.au/-rXeYPJs/taste/2016/11/chicken-pad-thai-94082-1.jpeg"
     )
-    p Category.all[7]
+
 menu4 = Menu.create!(
     name: "Tapas",
     description: "hello",
