@@ -15,7 +15,7 @@ class BookingsController < ApplicationController
     @booking.price = @menu.guests*@menu.price
     @booking.user = current_user
     @booking.save
-    # redirect_to account_booking_path(@booking) ---- to be added
+    redirect_to menu_path(@menu)
   end
 
   private
