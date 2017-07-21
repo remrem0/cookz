@@ -6,15 +6,9 @@
       <h2>"Cookz for life"</h2>
     </div>
     <div class="tabs">
-      <a class="tab" href="#">
-        <h3>Profile Info</h3>
-      </a>
-      <a class="tab active" href="#">
-        <h3>My reservations</h3>
-      </a>
-      <a class="tab" href="#">
-        <h3>My menus</h3>
-      </a>
+      <%= link_to  "Profile Info", account_profile_path, class:"tab"%>
+      <%= link_to  "My Reservations", account_reservations_path, class:"tab active"%>
+      <%= link_to  "My menus", account_menus_path, class:"tab"%>
     </div>
   </div>
 </div>
