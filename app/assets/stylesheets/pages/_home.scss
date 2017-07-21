@@ -78,17 +78,32 @@
 }
 
 .container-grey {
-  background-color: #F5F5F5;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 10%;
   padding-top: 5%;
-}
-.search-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  h1 {
+  font-size: 55px;
+  font-family: "Cabin", sans-serif;
+  }
+  .search-card {
   background-color: #F3EFF5;
   padding: 2px;
   border-radius: 5px;
+  width: 100%;
+
 }
+}
+
+
 
 .form-control {
   height: 47px !important;
@@ -118,11 +133,6 @@
 
 h2.text-center {
   margin: 0;
-  font-family: "Cabin", sans-serif;
-}
-
-#main_h1 {
-  font-size: 55px;
   font-family: "Cabin", sans-serif;
 }
 
