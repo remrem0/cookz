@@ -6,7 +6,7 @@
       <h2>"Cookz for life"</h2>
     </div>
     <div class="tabs">
-    <%= link_to  "Profile Info", account_profile_path, class:"tab"%>
+      <%= link_to  "Profile Info", account_profile_path, class:"tab"%>
       <%= link_to  "My Reservations", account_reservations_path, class:"tab active"%>
       <%= link_to  "My menus", account_menus_path, class:"tab"%>
     </div>
@@ -28,8 +28,8 @@
 
       <div id="change-booking-status-<%= booking.id %>">
         <% if booking.status == "pending" %>
-          <%= link_to "Confirm booking", confirm_account_reservation_path(booking), method: :patch, remote: true %>
-          <%= link_to "Cancel booking", cancel_account_reservation_path(booking), method: :patch, remote: true %>
+        <%= link_to "Confirm booking", confirm_account_reservation_path(booking), method: :patch, remote: true %>
+        <%= link_to "Cancel booking", cancel_account_reservation_path(booking), method: :patch, remote: true %>
         <% end %>
       </div>
 
@@ -37,9 +37,7 @@
       <h4><strong>Description: </strong><%= booking.description %></h4>
       <h5>This booking will take place on the <%= booking.date %></h5>
       <h4>Your revenue: <strong><%= booking.price %>€</strong></h4>
-      <br>
       <% end %>
-
     </div>
   </div>
 </div>
